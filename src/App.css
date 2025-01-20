@@ -1,0 +1,20 @@
+/* AppStyles.css */
+.app-container {
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+}
+
+.app-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.components-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

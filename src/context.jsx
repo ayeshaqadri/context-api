@@ -1,10 +1,27 @@
+// import React, { createContext, useReducer } from 'react'
+// import { reducer } from './reducer';
+// export const GlobalContext = createContext("Initial Value");
+// let data = {
+//   user: {},
+//   darkTheme: true,
+//   MyNum: 0
+// }
+// export default function ContextProvider({ children }) {
+//   const [state, dispatch] = useReducer(reducer, data)
+//   return (
+//     <GlobalContext.Provider value={{ state, dispatch }}>
+//       {children}
+//     </GlobalContext.Provider>
+//   )
+// }
+
 import React, { createContext, useReducer } from 'react'
 import { reducer } from './reducer';
 export const GlobalContext = createContext("Initial Value");
 let data = {
   user: {},
   darkTheme: true,
-  MyNum: 0
+  myNum: 0
 }
 export default function ContextProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, data)

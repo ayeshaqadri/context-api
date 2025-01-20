@@ -4,11 +4,11 @@ export const reducer = (state, action) => {
       case "USER_LOGIN": {
         return { ...state, user: action.payload }
       }
-      case "USER_LOGOUT": {
-        return { ...state, user: null } 
+      case "ADD": {
+        return { ...state,myNum:state.myNum+1 } 
       }    
-      case "USER_LOGOUT": {
-        return { ...state, user: null } 
+      case "SUB": {
+        return { ...state,myNum:state.myNum-1 } 
       }
       case "USER_LOGOUT": {
         return { ...state, user: null } 
